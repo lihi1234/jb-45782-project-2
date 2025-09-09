@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+        <script defer src="app.js"></script>
+        <!-- <script defer type="module" src="liveReport.js"></script> -->
+        
+</head>
+
+<body>
+    <div id="header" class="parallax">
+   <h1 id="title"> Cryptonite </h1>
+
+   <!-- <img id="header-img" src="./background.jpeg"> -->
+  
+   </div>
+   <!-- <hr> -->
+   <div id="nav-bar">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="live-report-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Live Report</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">About</button>
+  </li>
+
+  <li id="search-bar">
+ <input type="text" id="search-input"> 
+    <button id="search-btn"> search</button>
+  </li>
+</ul>
+</div>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"></div>
+  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"></div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modal-container">
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button id="submit-modal-btn" type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="container">
+  <div id="loader"  >
+  <img id="loader-img" src="./progress-spinner.gif" alt="Loading..." width="120">
+</div>
+  <canvas id="myChart" ></canvas>
+  <div id="home-div"></div>
+    <div id="about-div" >
+       <h1>Cryptocurrency Tracker</h1>
+    <p>The website provides information on various digital currencies, allowing users to explore details about each coin.<br>
+    It offers a feature to select specific cryptocurrencies to track, displaying real-time price data and interactive charts <br>
+    to monitor the value fluctuations of the chosen coins.<br>
+    Users can easily compare the performance of their selected digital assets over different time periods.</p>
+    </div>
+
+</div>
+
+</body>
+
+</html>
